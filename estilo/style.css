@@ -215,15 +215,17 @@ footer a:hover {
     transition: all linear 0.3s;
 }
 
+
 .modal_active #modal_img{
     transform: scale(1);
 }
+
 
 .modal{
 
     width: 73vw;
     height: 70vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1.0);
     position: absolute;
     visibility: hidden;
     opacity: 0;
