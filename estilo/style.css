@@ -204,3 +204,63 @@ footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
+
+.small_img {
+    cursor: pointer;
+}
+
+#modal_img{
+    width: 65vw;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.modal_active #modal_img{
+    transform: scale(1);
+}
+
+.modal{
+
+    width: 73vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+
+}
+
+.modal_content{
+
+    margin-top: 70px;
+    display: static;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#bt_close{
+
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: solid 1px white;
+    transition: all ease-out 0.4s;
+}
+
+#bt_close:hover{
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
